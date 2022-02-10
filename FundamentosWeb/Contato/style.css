@@ -1,0 +1,170 @@
+/* Estilos da página index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Covered+By+Your+Grace&display=swap');
+
+body{
+    
+    background-color: #000000;
+    background-image: linear-gradient(326deg, #000000 0%, #ce203c 74%);
+    
+}
+
+.cabecalho
+{   
+   display: flex; 
+   align-items: center;
+   justify-content: flex-end;
+   
+}
+
+
+.menu li { /* Chamando a class menu, que foi classificada no html*/  /* esse li depois de .menu é para entrar na tag li*/
+    display: inline;
+    padding: 22px;
+    font-size: 25px;
+    font-family: 'Covered By Your Grace', cursive;
+    
+
+}
+
+
+.menu a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.menu a:hover
+{
+    color: rgb(127, 22, 224);
+}
+
+.titulo-main
+{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    
+
+}
+
+.conteudo
+{
+    margin: 50px;
+    border-top: 1px solid black
+}
+.conteudo-principal
+{
+display: flex;
+flex-flow: row;
+align-items: center;
+justify-content: space-around;
+
+}
+.conteudo-principal-texto
+{
+    
+    
+}
+.titulo-main
+{
+    font-size: 50px;
+    font-family: 'Covered By Your Grace', cursive;
+    
+
+}
+.paragrafo-main
+{
+    font-size: 16px;
+    padding: 5px;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.imagem-main
+{
+    height: 300px;
+    
+}
+
+.rodape
+{
+    padding: 20px;
+    border-top: 1px solid black
+}
+
+.redes-sociais
+{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    
+}
+
+
+.paragrafo-rodape
+{
+    font-size: 12px;
+   color: blue;
+   font-family: 'Covered By Your Grace', cursive;
+ 
+}
+
+
+  /*Fim do index*/  
+
+  /* Estilos da página contato.html*/
+
+  .form-main-contato
+  {
+      padding: 22px;
+      border-radius: 40px;
+      background-image: url(./img/teia.jpg);
+  }
+  .texto-form
+  {
+      font-size: 22px;
+      color:white
+
+  }
+
+  .titulo-endereço
+  {
+      font-size: 22px;
+      font-family: 'Covered By Your Grace', cursive;
+    
+  }
+
+  .map
+  {
+      height: 100%;
+      
+  }
+
+.botao-contato
+{
+    background-color: white;
+    width: 59px;
+    height: 25px;
+    border-radius: 32px;
+    margin: 8px;
+    font-size: 15px;
+    
+    
+}
+.botao-contato:hover
+{
+    background-color: red;
+}
+.linha-form
+{
+    display: flex; 
+    color: black;
+    
+    
+}
+
+.conteudo-main-contato
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
