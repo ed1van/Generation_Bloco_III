@@ -9,39 +9,49 @@
 </head>
 <body>
     <header class="cabecalho">
+        <nav>
     <ul class="menu">
-        <li>
+        <li> 
             <a href="index.html">home</a>
-        </li>
+        </li> 
+        
         <li>
             <a href="contato.html">contato</a>
         </li>
     </ul>
+    </nav>
+    <img class="logo-aranha" src="./img/logospider.png" alt="logo spider">
 </header>
+
     <div class="conteudo-main-contato">
     <main class="conteudo">
     <h1 class="titulo-main">Entre em contato</h1>
     <form class="form-main-contato">
         <label class="texto-form" for="nome"> Nome:</label>
-        <input class="linha-form" type="text" id="nome">
-        
+        <input class="linha-form" type="text" id="nome" onkeyup= "validarNome()">
+        <div id="txtNome"></div>
+
         <label class="texto-form" for="email">E-mail:</label>
-        <input class="linha-form" type="email" id="email">
+        <input class="linha-form" type="email" id="email" onkeyup= "validarEmail()">
+        <div id="txtEmail"></div>
         
         <label class="texto-form" for="assunto">Assunto:</label>
-        <textarea class="linha-form" name="assunto" id="assunto" cols="60" rows="1"></textarea>
+        <textarea class="linha-form" name="assunto" id="assunto" cols="60" rows="1" onkeyup="validarAssunto()"></textarea>
+        <div id="txtAssunto"></div>
         
-        <button class="botao-contato"><b>Enviar</b></button>
+        <button class="botao-contato" onclick="enviar()"><b>Enviar</b></button>
+
     </form>
     <div class="titulo-endereço">
     <h2 >Endereço</h2>
     </div>
 
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48425.050681897985!2d-73.98019645235071!3d40.661503669564496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1644513098404!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48425.050681897985!2d-73.98019645235071!3d40.661503669564496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1644513098404!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()"  id="mapa"></iframe>
     </main>
 </div>
-    <footer class="rodape">
 
+    <footer class="rodape">
+        
         <div class="rodape-conteudo">
         <a  href="https://www.facebook.com/" target="_blank">
         <img class="redes-sociais" src="./img/facebook (1).png" alt="facebook">
@@ -58,5 +68,8 @@
             
             <p class="paragrafo-rodape">direitos reservados &copy</p> 
         </footer>
+
+
+ <script src="./js/script.js"></script>
 </body>
 </html>

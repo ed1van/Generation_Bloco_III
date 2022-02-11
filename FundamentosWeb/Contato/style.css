@@ -4,8 +4,8 @@
 body{
     
     background-color: #000000;
-    background-image: linear-gradient(326deg, #000000 0%, #ce203c 74%);
-    
+    background-image: linear-gradient(326deg, #000000 0%, #ce203c 64%);
+   
 }
 
 .cabecalho
@@ -118,11 +118,13 @@ justify-content: space-around;
       padding: 22px;
       border-radius: 40px;
       background-image: url(./img/teia.jpg);
+      
   }
   .texto-form
   {
       font-size: 22px;
       color:white
+      
 
   }
 
@@ -135,28 +137,31 @@ justify-content: space-around;
 
   .map
   {
-      height: 100%;
-      
+      border-radius: 42px;
   }
 
 .botao-contato
 {
     background-color: white;
-    width: 59px;
-    height: 25px;
-    border-radius: 32px;
+    width: 69px;
+    height: 35px;
+    border-radius: 42px;
     margin: 8px;
-    font-size: 15px;
+    font-size: 25px;
+    font-family: 'Covered By Your Grace', cursive;
     
     
 }
 .botao-contato:hover
 {
-    background-color: red;
+    background-color: grey;
+    height: 45px;
+    
 }
 .linha-form
 {
     display: flex; 
+    justify-content: space-around;
     color: black;
     
     
@@ -168,3 +173,10 @@ justify-content: space-around;
     align-items: center;
     justify-content: space-around;
 }
+
+.logo-aranha
+{
+    height: 125px;
+    
+}
+
